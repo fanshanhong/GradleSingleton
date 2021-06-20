@@ -1,0 +1,10 @@
+apply plugin: 'maven'
+uploadArchives {
+    repositories.mavenDeployer {
+        pom.version = '1.0.2'
+        pom.artifactId = 'singleton'
+        pom.groupId = 'com.fan.gradle'
+        repository(url: "file:///Volumes/Mechanical/G/maven/local-repo/")
+    }
+}
+
